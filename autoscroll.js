@@ -1,6 +1,7 @@
 var doc = document;
 
-var ms = prompt('Enter The Milliseconds');
+var px = prompt('Enter The Pixel Rate');
+var ms = prompt('Enter The Milliseconds You Wish To Travel At');
 
 var elem = document.documentElement;
 
@@ -10,7 +11,7 @@ begin(ms, px);
 
 function begin(ms, px){
 	t = setInterval(function(){ 
-		window.scrollBy(0, 1);
+		window.scrollBy(0, px);
  	}, ms);
 }
 
